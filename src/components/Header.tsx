@@ -9,13 +9,16 @@ export const Header = styled.div`
   padding: ${rem(16)};
   justify-content: center;
   align-items: center;
+  /* color: ${colours.veryLightGrey}; */
 `;
 export const Name = styled.h1`
   margin: ${rem(8)} 0 0 0;
+  font-weight: 400;
 `;
 export const Job = styled.h3`
   margin: 0;
   color: ${colours.lightGrey};
+  font-weight: 300;
 `;
 // rgba(97, 218, 251, 1)
 

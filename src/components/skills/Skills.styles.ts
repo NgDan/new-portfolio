@@ -1,16 +1,20 @@
 import { rem } from 'polished';
 import styled from 'styled-components';
+import colours from '../../constants/colours';
 
 export const Container = styled.div`
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   margin-top: ${rem(24)};
 `;
 
-export const SkillName = styled.p``;
+export const SkillName = styled.p`
+  margin: 0 0 ${rem(8)} 0;
+  font-size: ${rem(12)};
+`;
 
 export const SkillWrapper = styled.div`
   display: flex;
@@ -27,6 +31,8 @@ export const Skill = styled.div`
   align-items: center;
   display: flex;
   margin: 0.5rem 1rem;
-  box-shadow: ${({ color }) =>
-    `${rem(0)} ${rem(0)} ${rem(16)} ${rem(-3)} ${color}`};
+  background-color: ${colours.navy};
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  /* box-shadow: ${({ color }) =>
+    `${rem(0)} ${rem(0)} ${rem(16)} ${rem(-3)} ${color}`}; */
 `;

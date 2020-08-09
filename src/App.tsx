@@ -1,17 +1,17 @@
 import React from 'react';
 import { Wrapper } from './components/Wrapper';
-import { Header, Name, Job, Icon } from './components/Header';
+import { Header, Name, Job } from './components/Header';
 import Skills from './components/skills/Skills';
-function App() {
+import MainCard from './components/main-card/MainCard';
+export default function App() {
   return (
     <Wrapper>
       <Header>
-        <Name>Dan Negrusa</Name>
-        <Job>Web developer</Job>
+        <Name>Lorem ipsum</Name>
+        <Job>Lorem ipsum</Job>
         <Skills />
       </Header>
+      <MainCard />
     </Wrapper>
   );
 }
-
-export default App;

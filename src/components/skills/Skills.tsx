@@ -14,6 +14,18 @@ const Skills = () => (
       <Skill color='#fdd83c'>
         <JsLogo />
       </Skill>
+      <SkillName>Javascript</SkillName>
+    </SkillWrapper>
+    <SkillWrapper>
+      <Skill color='#fdd83c'>
+        <JsLogo />
+      </Skill>
+      <SkillName>React</SkillName>
+    </SkillWrapper>
+    <SkillWrapper>
+      <Skill color='#fdd83c'>
+        <JsLogo />
+      </Skill>
       <SkillName>React</SkillName>
     </SkillWrapper>
     <SkillWrapper>
