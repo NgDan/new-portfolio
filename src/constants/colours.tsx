@@ -1,9 +1,14 @@
 export default {
   black: '#0B080F',
-  veryLightGrey: '#FEFDFD',
+  blue: '#28539E',
+  veryLightGrey: '#EFF2F5',
   lightGrey: '#A6A8B2',
   darkGrey: '#503D44',
   navy: '#272958',
-  darkNavy: '#060714',
-  darkLavander: '#4A53B3',
+  darkNavy: '#14406C',
 };
+
+//header #28539E
+//MainCard #EFF2F5
+//JobCard white
+//FontBlue #14406C

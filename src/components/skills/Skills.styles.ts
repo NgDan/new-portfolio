@@ -14,6 +14,7 @@ export const Container = styled.div`
 export const SkillName = styled.p`
   margin: 0 0 ${rem(8)} 0;
   font-size: ${rem(12)};
+  color: white;
 `;
 
 export const SkillWrapper = styled.div`
@@ -31,7 +32,7 @@ export const Skill = styled.div`
   align-items: center;
   display: flex;
   margin: 0.5rem 1rem;
-  background-color: ${colours.navy};
+  background-color: white;
   box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
   /* box-shadow: ${({ color }) =>
     `${rem(0)} ${rem(0)} ${rem(16)} ${rem(-3)} ${color}`}; */

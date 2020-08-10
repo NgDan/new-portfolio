@@ -7,6 +7,7 @@ export default function Experience() {
     <>
       <Title>Experience</Title>
       <JobCard />
+      <JobCard />
     </>
   );
 }
