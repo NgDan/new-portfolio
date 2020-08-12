@@ -12,3 +12,9 @@ export default {
 //MainCard #EFF2F5
 //JobCard white
 //FontBlue #14406C
+
+//pastel style
+//#FFD22E
+//#FF6E3F
+//#2BB8F4
+//#AEB5B5 grey
