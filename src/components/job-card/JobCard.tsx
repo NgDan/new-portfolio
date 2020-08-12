@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import {
   Container,
   Title,
@@ -8,25 +8,25 @@ import {
   TaskDescription,
 } from './JobCard.styles';
 
-export default function JobCard() {
+interface JobCardProps {
+  title: string;
+  date: string;
+  tasks: Array<string>;
+}
+
+const JobCard: FC<JobCardProps> = ({ title, date, tasks }) => {
   return (
     <Container>
-      <Title>Web developer</Title>
-      <Date>June 2020 - Present</Date>
+      <Title>{title}</Title>
+      <Date>{date}</Date>
       <Tasks>
-        <Task>
-          <TaskDescription>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-            rerum.
-          </TaskDescription>
-        </Task>
-        <Task>
-          <TaskDescription>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-            rerum.
-          </TaskDescription>
-        </Task>
+        {tasks.map((task) => (
+          <Task>
+            <TaskDescription>{task}</TaskDescription>
+          </Task>
+        ))}
       </Tasks>
     </Container>
   );
-}
+};
+export default JobCard;

@@ -11,7 +11,9 @@ export const Wrapper = styled.div`
   } */
   /* background-position: 100px -102px;
   background-size: 130%; */
-  background-color: ${colours.blue};
+  /* background-color: ${colours.blue};
+   */
+  
   margin:auto;
   width: 100%;
   @media only screen and (min-width: ${breakpoints.tabletPortrait + `px`}) {

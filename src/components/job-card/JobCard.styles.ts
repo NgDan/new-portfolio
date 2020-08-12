@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import colours from '../../constants/colours';
 import { rem } from 'polished';
+import breakpoints from '../../constants/breakpoints';
 
 export const Container = styled.div`
   width: 100%;
@@ -9,6 +10,9 @@ export const Container = styled.div`
   border-radius: ${rem(12)};
   margin-top: ${rem(16)};
   color: ${colours.darkNavy};
+  @media only screen and (min-width: ${breakpoints.tabletPortrait + `px`}) {
+    width: calc(50% - ${rem(8)});
+  }
 `;
 
 export const Title = styled.p`
