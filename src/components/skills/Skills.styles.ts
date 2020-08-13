@@ -9,6 +9,7 @@ export const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin-top: ${rem(24)};
+  background-color: ${colours.darkNavy};
 `;
 
 export const SkillName = styled.p`

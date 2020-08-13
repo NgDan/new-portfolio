@@ -1,11 +1,13 @@
 export default {
   black: '#0B080F',
-  blue: '#28539E',
   veryLightGrey: '#EFF2F5',
   lightGrey: '#A6A8B2',
   darkGrey: '#503D44',
-  navy: '#272958',
+  navy: '#28539E',
   darkNavy: '#14406C',
+  mustard: '#FFD22E',
+  orange: '#FF6E3F',
+  lightBlue: '#2BB8F4',
 };
 
 //header #28539E
@@ -14,7 +16,7 @@ export default {
 //FontBlue #14406C
 
 //pastel style
-//#FFD22E
-//#FF6E3F
-//#2BB8F4
+//#FFD22E mustard
+//#FF6E3F orange
+//#2BB8F4 lightBlue
 //#AEB5B5 grey

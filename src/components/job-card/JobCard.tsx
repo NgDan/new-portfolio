@@ -12,11 +12,12 @@ interface JobCardProps {
   title: string;
   date: string;
   tasks: Array<string>;
+  bgColor: string;
 }
 
-const JobCard: FC<JobCardProps> = ({ title, date, tasks }) => {
+const JobCard: FC<JobCardProps> = ({ title, date, tasks, bgColor }) => {
   return (
-    <Container>
+    <Container bgColor={bgColor}>
       <Title>{title}</Title>
       <Date>{date}</Date>
       <Tasks>

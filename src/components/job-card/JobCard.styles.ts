@@ -3,10 +3,10 @@ import colours from '../../constants/colours';
 import { rem } from 'polished';
 import breakpoints from '../../constants/breakpoints';
 
-export const Container = styled.div`
+export const Container = styled.div<{ bgColor: string }>`
   width: 100%;
   padding: ${rem(16)};
-  background-color: white;
+  background-color: ${({ bgColor }) => bgColor};
   border-radius: ${rem(12)};
   margin-top: ${rem(16)};
   color: ${colours.darkNavy};
