@@ -6,12 +6,12 @@ import {
   Question,
   Answer,
   SectionsWrapper,
-} from './AboutMyself.styles';
+} from './AboutMe.styles';
 
-const AboutMyself = () => {
+const AboutMe = () => {
   return (
     <Container>
-      <Title>About myself</Title>
+      <Title>About me</Title>
       <SectionsWrapper>
         <Section>
           <Question>Who am I?</Question>
@@ -44,4 +44,4 @@ const AboutMyself = () => {
     </Container>
   );
 };
-export default AboutMyself;
+export default AboutMe;

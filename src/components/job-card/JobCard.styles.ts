@@ -15,17 +15,18 @@ export const Container = styled.div<{ bgColor: string }>`
   }
 `;
 
-export const Title = styled.p`
+export const Title = styled.p<{ color: string }>`
   font-size: ${rem(20)};
   font-weight: 600;
   margin: 0;
-  /* color: ${colours.darkNavy}; */
+  color: ${({ color }) => color};
 `;
 
-export const Date = styled.p`
+export const Date = styled.p<{ color: string }>`
   font-size: ${rem(12)};
   margin: ${rem(4)} 0 0 0;
   border-bottom: ${rem(2)} solid ${colours.darkNavy};
+  color: ${({ color }) => color};
   padding-bottom: ${rem(12)};
 `;
 
@@ -38,8 +39,9 @@ export const Task = styled.li`
   margin-top: 0.5rem;
 `;
 
-export const TaskDescription = styled.p`
+export const TaskDescription = styled.p<{ color: string }>`
   font-size: ${rem(16)};
   margin: 0;
+  color: ${({ color }) => color};
   /* color: ${colours.darkNavy}; */
 `;

@@ -13,17 +13,18 @@ interface JobCardProps {
   date: string;
   tasks: Array<string>;
   bgColor: string;
+  color: string;
 }
 
-const JobCard: FC<JobCardProps> = ({ title, date, tasks, bgColor }) => {
+const JobCard: FC<JobCardProps> = ({ title, date, tasks, bgColor, color }) => {
   return (
     <Container bgColor={bgColor}>
-      <Title>{title}</Title>
-      <Date>{date}</Date>
+      <Title color={color}>{title}</Title>
+      <Date color={color}>{date}</Date>
       <Tasks>
         {tasks.map((task) => (
           <Task>
-            <TaskDescription>{task}</TaskDescription>
+            <TaskDescription color={color}>{task}</TaskDescription>
           </Task>
         ))}
       </Tasks>

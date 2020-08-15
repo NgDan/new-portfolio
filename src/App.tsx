@@ -3,7 +3,7 @@ import { Wrapper } from './components/Wrapper';
 import { Header, Name, Job } from './components/Header';
 import Skills from './components/skills/Skills';
 import MainCard from './components/main-card/MainCard';
-import AboutMyself from './components/about-myself/AboutMyself';
+import AboutMe from './components/about-me/AboutMe';
 
 export default function App() {
   return (
@@ -13,7 +13,7 @@ export default function App() {
         <Job>Lorem ipsum</Job>
         <Skills />
       </Header>
-      <AboutMyself />
+      <AboutMe />
       <MainCard />
     </Wrapper>
   );

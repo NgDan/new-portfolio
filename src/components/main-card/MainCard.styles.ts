@@ -9,4 +9,5 @@ export const Container = styled.div`
   border-radius: ${rem(48)} ${rem(48)} 0 0;
   width: 100%;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.7);
+  margin-top: ${rem(24)};
 `;

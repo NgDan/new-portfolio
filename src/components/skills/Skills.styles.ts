@@ -10,11 +10,14 @@ export const Container = styled.div`
   flex-wrap: wrap;
   margin-top: ${rem(24)};
   background-color: ${colours.darkNavy};
+  padding: ${rem(16)} ${rem(16)} ${rem(8)} ${rem(16)};
+  border-radius: ${rem(12)};
 `;
 
 export const SkillName = styled.p`
   margin: 0 0 ${rem(8)} 0;
   font-size: ${rem(12)};
+  color: white;
 `;
 
 export const SkillWrapper = styled.div`

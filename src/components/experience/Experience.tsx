@@ -17,6 +17,7 @@ export default function Experience() {
             'Integrated the REST API of the new AB testing tool with multiple of Experian’s applications. This process involved collaborating with various technical teams and business stakeholders.',
           ]}
           bgColor={colours.mustard}
+          color={colours.darkNavy}
         />
         <JobCard
           title={'Junior web developer - Experian'}
@@ -29,6 +30,7 @@ export default function Experience() {
             'Practiced best practices and Agile standards such as unit testing, pull request reviews, pair programming, continuous delivery and integration, sprints, user stories, estimations etc.',
           ]}
           bgColor={colours.lightBlue}
+          color={'white'}
         />
       </Wrapper>
     </>
