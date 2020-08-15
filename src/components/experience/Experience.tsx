@@ -33,6 +33,22 @@ export default function Experience() {
           color={'white'}
         />
       </Wrapper>
+      <Title>Personal projects</Title>
+      <Wrapper>
+        <JobCard
+          title={'Junior web developer - Experian'}
+          date={'April 2019 - June 2020'}
+          tasks={[
+            'Learned from experienced developers and improved my technical abilities in different technologies and standards',
+            'Built and maintained HTML, CSS and Js static pages.',
+            'Created AB tests (delivered through Adobe Target).',
+            'Built features and AB tests in Typescript React using Split.io for controlling the traffic allocation.',
+            'Practiced best practices and Agile standards such as unit testing, pull request reviews, pair programming, continuous delivery and integration, sprints, user stories, estimations etc.',
+          ]}
+          bgColor={colors.orange}
+          color={'white'}
+        />
+      </Wrapper>
     </>
   );
 }

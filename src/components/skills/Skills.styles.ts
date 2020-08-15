@@ -1,6 +1,7 @@
 import { rem } from 'polished';
 import styled from 'styled-components';
 import colors from '../../constants/colors';
+import BackgroundPattern from './icons/BackgroundPattern';
 
 export const Container = styled.div`
   width: 100%;
@@ -10,8 +11,10 @@ export const Container = styled.div`
   flex-wrap: wrap;
   margin-top: ${rem(24)};
   background-color: ${colors.darkNavy};
-  padding: ${rem(16)} ${rem(16)} ${rem(8)} ${rem(16)};
+  background-image: ${BackgroundPattern};
+  padding: ${rem(8)} ${rem(16)} ${rem(12)} ${rem(16)};
   border-radius: ${rem(12)};
+  box-shadow: 0 ${rem(3)} ${rem(15)} rgba(0, 0, 0, 0.7);
 `;
 
 export const SkillName = styled.p`
@@ -35,8 +38,8 @@ export const Skill = styled.div`
   align-items: center;
   display: flex;
   margin: 0.5rem 1rem;
-  background-color: white;
-  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  /* background-color: white; */
+  /* box-shadow: 0px 3px 15px rgba(0,0,0,0.2); */
   /* box-shadow: ${({ color }) =>
     `${rem(0)} ${rem(0)} ${rem(16)} ${rem(-3)} ${color}`}; */
 `;

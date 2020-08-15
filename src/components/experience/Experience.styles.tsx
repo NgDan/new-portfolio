@@ -6,9 +6,12 @@ import colors from '../../constants/colors';
 export const Title = styled.p`
   padding: 0 ${rem(16)};
   font-size: ${rem(22)};
-  margin: ${rem(8)} 0 ${rem(8)} 0;
   color: white;
   font-weight: 600;
+  margin: ${rem(20)} 0 0rem 0;
+  &:first-of-type {
+    margin: ${rem(8)} 0 0 0;
+  }
 `;
 
 export const Wrapper = styled.div`

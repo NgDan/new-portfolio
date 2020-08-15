@@ -14,7 +14,7 @@ const AboutMe = () => {
       <Title>About me</Title>
       <SectionsWrapper>
         <Section>
-          <Question>Who am I?</Question>
+          <Question>Who I am</Question>
           <Answer>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             Consequuntur eius incidunt iure laudantium sed odit inventore,
