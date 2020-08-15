@@ -12,7 +12,7 @@ export const Container = styled.div`
   margin-top: ${rem(24)};
   background-color: ${colors.darkNavy};
   background-image: ${BackgroundPattern};
-  padding: ${rem(8)} ${rem(16)} ${rem(12)} ${rem(16)};
+  padding: ${rem(8)} ${rem(16)} ${rem(16)} ${rem(16)};
   border-radius: ${rem(12)};
   box-shadow: 0 ${rem(3)} ${rem(15)} rgba(0, 0, 0, 0.7);
 `;
@@ -21,6 +21,7 @@ export const SkillName = styled.p`
   margin: 0 0 ${rem(8)} 0;
   font-size: ${rem(12)};
   color: white;
+  font-weight: 600;
 `;
 
 export const SkillWrapper = styled.div`
@@ -37,9 +38,14 @@ export const Skill = styled.div`
   justify-content: center;
   align-items: center;
   display: flex;
-  margin: 0.5rem 1rem;
-  /* background-color: white; */
-  /* box-shadow: 0px 3px 15px rgba(0,0,0,0.2); */
-  /* box-shadow: ${({ color }) =>
-    `${rem(0)} ${rem(0)} ${rem(16)} ${rem(-3)} ${color}`}; */
+  margin: ${rem(0)} ${rem(6)} ${rem(0)} ${rem(6)};
+`;
+
+export const Disclaimer = styled.p`
+  margin: 0;
+  color: white;
+  margin-top: ${rem(4)};
+  padding: 0 ${rem(8)};
+  width: 100%;
+  font-size: ${rem(12)};
 `;

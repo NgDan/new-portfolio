@@ -1,9 +1,22 @@
 import React from 'react';
-import { Container, Skill, SkillName, SkillWrapper } from './Skills.styles';
+import {
+  Container,
+  Skill,
+  SkillName,
+  SkillWrapper,
+  Disclaimer,
+} from './Skills.styles';
 import ReactLogo from './icons/ReactLogo';
 import JsLogo from './icons/JsLogo';
 import CssLogo from './icons/CssLogo';
-import TsSvg from './icons/TsLogo';
+import TsLogo from './icons/TsLogo';
+import NodeJsLogo from './icons/NodeJsLogo';
+import ReduxLogo from './icons/ReduxLogo';
+import JestLogo from './icons/JestLogo';
+import SplitLogo from './icons/SplitLogo';
+import AwsLogo from './icons/AwsLogo';
+import DockerLogo from './icons/DockerLogo';
+
 const Skills = () => (
   <Container>
     <SkillWrapper>
@@ -26,52 +39,50 @@ const Skills = () => (
     </SkillWrapper>
     <SkillWrapper>
       <Skill color='#fdd83c'>
-        <TsSvg />
+        <TsLogo />
       </Skill>
       <SkillName>Typescript</SkillName>
     </SkillWrapper>
     <SkillWrapper>
       <Skill color='#fdd83c'>
-        <JsLogo />
+        <NodeJsLogo />
       </Skill>
-      <SkillName>React</SkillName>
+      <SkillName>Node Js</SkillName>
     </SkillWrapper>
     <SkillWrapper>
       <Skill color='#fdd83c'>
-        <JsLogo />
+        <ReduxLogo />
       </Skill>
-      <SkillName>React</SkillName>
+      <SkillName>Redux</SkillName>
     </SkillWrapper>
     <SkillWrapper>
       <Skill color='#fdd83c'>
-        <JsLogo />
+        <JestLogo />
       </Skill>
-      <SkillName>React</SkillName>
+      <SkillName>Jest</SkillName>
     </SkillWrapper>
     <SkillWrapper>
       <Skill color='#fdd83c'>
-        <JsLogo />
+        <SplitLogo />
       </Skill>
-      <SkillName>React</SkillName>
+      <SkillName>Split</SkillName>
     </SkillWrapper>
     <SkillWrapper>
       <Skill color='#fdd83c'>
-        <JsLogo />
+        <AwsLogo />
       </Skill>
-      <SkillName>React</SkillName>
+      <SkillName>AWS</SkillName>
     </SkillWrapper>
     <SkillWrapper>
       <Skill color='#fdd83c'>
-        <JsLogo />
+        <DockerLogo />
       </Skill>
-      <SkillName>React</SkillName>
+      <SkillName>Docker</SkillName>
     </SkillWrapper>
-    <SkillWrapper>
-      <Skill color='#fdd83c'>
-        <JsLogo />
-      </Skill>
-      <SkillName>React</SkillName>
-    </SkillWrapper>
+    <Disclaimer>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, dolorem
+      deserunt. Veritatis, veniam? Vel, reiciendis?
+    </Disclaimer>
   </Container>
 );
 export default Skills;
