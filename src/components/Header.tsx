@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import breakpoints from '../constants/breakpoints';
-import colours from '../constants/colours';
+import colors from '../constants/colors';
 import { rem } from 'polished';
 
 export const Header = styled.div`
@@ -9,7 +9,7 @@ export const Header = styled.div`
   padding: ${rem(16)};
   justify-content: center;
   align-items: center;
-  /* color: ${colours.veryLightGrey}; */
+  /* color: ${colors.veryLightGrey}; */
 `;
 export const Name = styled.h1`
   margin: ${rem(8)} 0 0 0;
@@ -17,7 +17,7 @@ export const Name = styled.h1`
 `;
 export const Job = styled.h3`
   margin: 0;
-  color: ${colours.lightGrey};
+  color: ${colors.lightGrey};
   font-weight: 300;
 `;
 // rgba(97, 218, 251, 1)

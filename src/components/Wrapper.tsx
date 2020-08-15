@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import breakpoints from '../constants/breakpoints';
 import { rem } from 'polished';
-import colours from '../constants/colours';
+import colors from '../constants/colors';
 
 export const Wrapper = styled.div`
   * {

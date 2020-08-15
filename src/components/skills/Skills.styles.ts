@@ -1,6 +1,6 @@
 import { rem } from 'polished';
 import styled from 'styled-components';
-import colours from '../../constants/colours';
+import colors from '../../constants/colors';
 
 export const Container = styled.div`
   width: 100%;
@@ -9,7 +9,7 @@ export const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin-top: ${rem(24)};
-  background-color: ${colours.darkNavy};
+  background-color: ${colors.darkNavy};
   padding: ${rem(16)} ${rem(16)} ${rem(8)} ${rem(16)};
   border-radius: ${rem(12)};
 `;

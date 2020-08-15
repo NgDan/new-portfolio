@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { rem } from 'polished';
 import breakpoints from '../../constants/breakpoints';
-import colours from '../../constants/colours';
+import colors from '../../constants/colors';
 
 export const Title = styled.p`
   padding: 0 ${rem(16)};

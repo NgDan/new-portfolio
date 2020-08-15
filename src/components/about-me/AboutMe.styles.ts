@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import { rem } from 'polished';
 import breakpoints from '../../constants/breakpoints';
-import colours from '../../constants/colours';
+import colors from '../../constants/colors';
 
 export const Container = styled.div`
-  color: ${colours.darkNavy};
+  color: ${colors.darkNavy};
 `;
 export const SectionsWrapper = styled.div`
   display: flex;
@@ -25,7 +25,7 @@ export const Title = styled.p`
   padding: ${rem(16)} ${rem(16)} 0 ${rem(16)};
   margin: 0;
   font-size: ${rem(22)};
-  color: ${colours.darkNavy};
+  color: ${colors.darkNavy};
   font-weight: 600;
 `;
 export const Question = styled.p`
