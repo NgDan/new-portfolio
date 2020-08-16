@@ -1,8 +1,6 @@
 export default {
   black: '#0B080F',
   veryLightGrey: '#EFF2F5',
-  lightGrey: '#A6A8B2',
-  darkGrey: '#503D44',
   navy: '#28539E',
   darkNavy: '#14406C',
   mustard: '#FFD22E',

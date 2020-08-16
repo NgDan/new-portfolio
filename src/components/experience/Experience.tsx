@@ -27,7 +27,7 @@ export default function Experience() {
             'Built and maintained HTML, CSS and Js static pages.',
             'Created AB tests (delivered through Adobe Target).',
             'Built features and AB tests in Typescript React using Split.io for controlling the traffic allocation.',
-            'Practiced best practices and Agile standards such as unit testing, pull request reviews, pair programming, continuous delivery and integration, sprints, user stories, estimations etc.',
+            'Followed best practices and Agile standards such as unit testing, pull request reviews, pair programming, continuous delivery and integration, sprints, user stories, estimations etc.',
           ]}
           bgColor={colors.lightBlue}
           color={'white'}
@@ -43,7 +43,7 @@ export default function Experience() {
             'Built and maintained HTML, CSS and Js static pages.',
             'Created AB tests (delivered through Adobe Target).',
             'Built features and AB tests in Typescript React using Split.io for controlling the traffic allocation.',
-            'Practiced best practices and Agile standards such as unit testing, pull request reviews, pair programming, continuous delivery and integration, sprints, user stories, estimations etc.',
+            'Followed best practices and Agile standards such as unit testing, pull request reviews, pair programming, continuous delivery and integration, sprints, user stories, estimations etc.',
           ]}
           bgColor={colors.orange}
           color={'white'}

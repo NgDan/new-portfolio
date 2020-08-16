@@ -5,6 +5,8 @@ import BackgroundPattern from './icons/BackgroundPattern';
 
 export const Container = styled.div`
   width: 100%;
+  display: block;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   display: flex;
@@ -12,7 +14,7 @@ export const Container = styled.div`
   margin-top: ${rem(24)};
   background-color: ${colors.darkNavy};
   background-image: ${BackgroundPattern};
-  padding: ${rem(8)} ${rem(16)} ${rem(16)} ${rem(16)};
+  padding: ${rem(6)} ${rem(16)} ${rem(8)} ${rem(16)};
   border-radius: ${rem(12)};
   box-shadow: 0 ${rem(3)} ${rem(15)} rgba(0, 0, 0, 0.7);
 `;

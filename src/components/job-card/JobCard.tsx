@@ -23,7 +23,7 @@ const JobCard: FC<JobCardProps> = ({ title, date, tasks, bgColor, color }) => {
       <Date color={color}>{date}</Date>
       <Tasks>
         {tasks.map((task) => (
-          <Task>
+          <Task key={task}>
             <TaskDescription color={color}>{task}</TaskDescription>
           </Task>
         ))}

@@ -85,7 +85,7 @@ export default function DockerLogo() {
           d='M885.22 686.202H757.157v128.062H885.22z'
         ></path>
         <g>
-          <g clip-path='url(#clipPath36)'>
+          <g clipPath='url(#clipPath36)'>
             <g transform='translate(483.303 229.75)'>
               <path
                 fill='#009ddb'

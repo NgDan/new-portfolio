@@ -18,71 +18,70 @@ import AwsLogo from './icons/AwsLogo';
 import DockerLogo from './icons/DockerLogo';
 
 const Skills = () => (
-  <Container>
-    <SkillWrapper>
-      <Skill color='#61dafb'>
-        <ReactLogo />
-      </Skill>
-      <SkillName>React</SkillName>
-    </SkillWrapper>
-    <SkillWrapper>
-      <Skill color='#fdd83c'>
-        <JsLogo />
-      </Skill>
-      <SkillName>Javascript</SkillName>
-    </SkillWrapper>
-    <SkillWrapper>
-      <Skill color='#fdd83c'>
-        <CssLogo />
-      </Skill>
-      <SkillName>CSS</SkillName>
-    </SkillWrapper>
-    <SkillWrapper>
-      <Skill color='#fdd83c'>
-        <TsLogo />
-      </Skill>
-      <SkillName>Typescript</SkillName>
-    </SkillWrapper>
-    <SkillWrapper>
-      <Skill color='#fdd83c'>
-        <NodeJsLogo />
-      </Skill>
-      <SkillName>Node Js</SkillName>
-    </SkillWrapper>
-    <SkillWrapper>
-      <Skill color='#fdd83c'>
-        <ReduxLogo />
-      </Skill>
-      <SkillName>Redux</SkillName>
-    </SkillWrapper>
-    <SkillWrapper>
-      <Skill color='#fdd83c'>
-        <JestLogo />
-      </Skill>
-      <SkillName>Jest</SkillName>
-    </SkillWrapper>
-    <SkillWrapper>
-      <Skill color='#fdd83c'>
-        <SplitLogo />
-      </Skill>
-      <SkillName>Split</SkillName>
-    </SkillWrapper>
-    <SkillWrapper>
-      <Skill color='#fdd83c'>
-        <AwsLogo />
-      </Skill>
-      <SkillName>AWS</SkillName>
-    </SkillWrapper>
-    <SkillWrapper>
-      <Skill color='#fdd83c'>
-        <DockerLogo />
-      </Skill>
-      <SkillName>Docker</SkillName>
-    </SkillWrapper>
-    <Disclaimer>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, dolorem
-      deserunt. Veritatis, veniam? Vel, reiciendis?
-    </Disclaimer>
-  </Container>
+  <div>
+    <p>Technologies I've worked with</p>
+    <Container>
+      <SkillWrapper>
+        <Skill color='#61dafb'>
+          <ReactLogo />
+        </Skill>
+        <SkillName>React</SkillName>
+      </SkillWrapper>
+      <SkillWrapper>
+        <Skill color='#fdd83c'>
+          <JsLogo />
+        </Skill>
+        <SkillName>Javascript</SkillName>
+      </SkillWrapper>
+      <SkillWrapper>
+        <Skill color='#fdd83c'>
+          <CssLogo />
+        </Skill>
+        <SkillName>CSS</SkillName>
+      </SkillWrapper>
+      <SkillWrapper>
+        <Skill color='#fdd83c'>
+          <TsLogo />
+        </Skill>
+        <SkillName>Typescript</SkillName>
+      </SkillWrapper>
+      <SkillWrapper>
+        <Skill color='#fdd83c'>
+          <NodeJsLogo />
+        </Skill>
+        <SkillName>Node Js</SkillName>
+      </SkillWrapper>
+      <SkillWrapper>
+        <Skill color='#fdd83c'>
+          <ReduxLogo />
+        </Skill>
+        <SkillName>Redux</SkillName>
+      </SkillWrapper>
+      <SkillWrapper>
+        <Skill color='#fdd83c'>
+          <JestLogo />
+        </Skill>
+        <SkillName>Jest</SkillName>
+      </SkillWrapper>
+      <SkillWrapper>
+        <Skill color='#fdd83c'>
+          <SplitLogo />
+        </Skill>
+        <SkillName>Split</SkillName>
+      </SkillWrapper>
+      <SkillWrapper>
+        <Skill color='#fdd83c'>
+          <AwsLogo />
+        </Skill>
+        <SkillName>AWS</SkillName>
+      </SkillWrapper>
+      <SkillWrapper>
+        <Skill color='#fdd83c'>
+          <DockerLogo />
+        </Skill>
+        <SkillName>Docker</SkillName>
+      </SkillWrapper>
+    </Container>
+  </div>
 );
 export default Skills;
