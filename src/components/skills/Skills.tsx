@@ -5,6 +5,7 @@ import {
   SkillName,
   SkillWrapper,
   Disclaimer,
+  Title,
 } from './Skills.styles';
 import ReactLogo from './icons/ReactLogo';
 import JsLogo from './icons/JsLogo';
@@ -19,7 +20,7 @@ import DockerLogo from './icons/DockerLogo';
 
 const Skills = () => (
   <div>
-    <p>Technologies I've worked with</p>
+    <Title>Technologies I've worked with</Title>
     <Container>
       <SkillWrapper>
         <Skill color='#61dafb'>
@@ -49,7 +50,7 @@ const Skills = () => (
         <Skill color='#fdd83c'>
           <NodeJsLogo />
         </Skill>
-        <SkillName>Node Js</SkillName>
+        <SkillName>NodeJs</SkillName>
       </SkillWrapper>
       <SkillWrapper>
         <Skill color='#fdd83c'>

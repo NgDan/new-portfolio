@@ -29,7 +29,7 @@ export const Title = styled.p`
   font-weight: 600;
 `;
 export const Question = styled.p`
-  font-size: ${rem(18)};
+  font-size: ${rem(16)};
   font-weight: 600;
   margin: 0;
 `;

@@ -11,7 +11,7 @@ export const Container = styled.div`
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  margin-top: ${rem(24)};
+  margin-top: ${rem(12)};
   background-color: ${colors.darkNavy};
   background-image: ${BackgroundPattern};
   padding: ${rem(6)} ${rem(16)} ${rem(8)} ${rem(16)};
@@ -50,4 +50,10 @@ export const Disclaimer = styled.p`
   padding: 0 ${rem(8)};
   width: 100%;
   font-size: ${rem(12)};
+`;
+
+export const Title = styled.p`
+  color: ${colors.darkNavy};
+  font-weight: 600;
+  margin: ${rem(16)} 0 0 0;
 `;
