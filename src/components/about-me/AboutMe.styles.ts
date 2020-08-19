@@ -15,9 +15,15 @@ export const SectionsWrapper = styled.div`
 `;
 export const Section = styled.div`
   width: 100%;
-  padding: ${rem(8)} ${rem(16)} ${rem(8)} ${rem(16)};
   margin: 0;
+  padding: ${rem(8)} ${rem(16)} ${rem(8)} ${rem(16)};
   @media only screen and (min-width: ${breakpoints.tabletPortrait + `px`}) {
+    &:first-of-type {
+      padding: ${rem(8)} ${rem(16)} ${rem(8)} ${rem(0)};
+    }
+    &:last-of-type {
+      padding: ${rem(8)} ${rem(0)} ${rem(8)} ${rem(16)};
+    }
     width: 50%;
   }
 `;

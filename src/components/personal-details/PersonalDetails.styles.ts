@@ -6,10 +6,14 @@ import colors from '../../constants/colors';
 export const Container = styled.div`
   display: flex;
   align-items: baseline;
-  flex-direction: row;
-  padding-bottom: ${rem(8)};
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-bottom: ${rem(12)};
   border-bottom: ${rem(2)} solid ${colors.darkNavy};
-  @media only screen and (min-width: ${breakpoints.tabletPortrait + `px`}) {
+  justify-content: space-between;
+
+  @media only screen and (min-width: ${breakpoints.mobile + `px`}) {
+    flex-direction: row;
   }
 `;
 
@@ -18,11 +22,30 @@ export const Name = styled.h1`
   font-weight: 400;
   color: ${colors.darkNavy};
   font-size: ${rem(24)};
+  justify-self: flex-start;
+  width: 100%;
 `;
 
-export const Job = styled.h1`
-  margin: 0 0 0 ${rem(10)};
+export const Phone = styled.a`
   color: ${colors.darkNavy};
   font-weight: 300;
-  font-size: ${rem(24)};
+  font-size: ${rem(16)};
+  margin-top: ${rem(8)};
+  text-decoration: none;
+`;
+
+export const Email = styled.a`
+  color: ${colors.darkNavy};
+  font-weight: 300;
+  font-size: ${rem(16)};
+  margin-top: ${rem(4)};
+  text-decoration: none;
+`;
+
+export const GitHub = styled.a`
+  color: ${colors.darkNavy};
+  font-weight: 300;
+  font-size: ${rem(16)};
+  margin-top: ${rem(4)};
+  text-decoration: none;
 `;

@@ -16,7 +16,7 @@ export const Container = styled.div<{ bgColor: string }>`
 `;
 
 export const Title = styled.p<{ color: string }>`
-  font-size: ${rem(20)};
+  font-size: ${rem(16)};
   font-weight: 600;
   margin: 0;
   color: ${({ color }) => color};
@@ -25,14 +25,13 @@ export const Title = styled.p<{ color: string }>`
 export const Date = styled.p<{ color: string }>`
   font-size: ${rem(12)};
   margin: ${rem(4)} 0 0 0;
-  border-bottom: ${rem(2)} solid ${colors.darkNavy};
   color: ${({ color }) => color};
-  padding-bottom: ${rem(12)};
 `;
 
 export const Tasks = styled.ul`
   padding: 0 1rem;
   margin: 0.5rem 0 0 0;
+  border-top: ${rem(2)} solid ${colors.darkNavy};
 `;
 
 export const Task = styled.li`

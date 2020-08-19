@@ -10,7 +10,7 @@ import {
 
 interface JobCardProps {
   title: string;
-  date: string;
+  date?: string;
   tasks: Array<string>;
   bgColor: string;
   color: string;
@@ -20,7 +20,7 @@ const JobCard: FC<JobCardProps> = ({ title, date, tasks, bgColor, color }) => {
   return (
     <Container bgColor={bgColor}>
       <Title color={color}>{title}</Title>
-      <Date color={color}>{date}</Date>
+      {date ? <Date color={color}>{date}</Date> : null}
       <Tasks>
         {tasks.map((task) => (
           <Task key={task}>
