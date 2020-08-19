@@ -16,9 +16,17 @@ interface JobCardProps {
   color: string;
 }
 
-const JobCard: FC<JobCardProps> = ({ title, date, tasks, bgColor, color }) => {
+const JobCard: FC<JobCardProps> = ({
+  title,
+  date,
+  tasks,
+  bgColor,
+  color,
+  children,
+}) => {
   return (
     <Container bgColor={bgColor}>
+      {children}
       <Title color={color}>{title}</Title>
       {date ? <Date color={color}>{date}</Date> : null}
       <Tasks>

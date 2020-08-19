@@ -1,6 +1,7 @@
 import React from 'react';
 import { Title, Wrapper } from './Experience.styles';
 import JobCard from '../job-card/JobCard';
+import { AgarImage } from './agar/AgarImage.styles';
 import colors from '../../constants/colors';
 
 export default function Experience() {
@@ -36,17 +37,18 @@ export default function Experience() {
       <Title>Personal projects</Title>
       <Wrapper>
         <JobCard
-          title={'Junior web developer - Experian'}
+          title={'Agar clone'}
           tasks={[
-            'Learned from experienced developers and improved my technical abilities in different technologies and standards',
-            'Built and maintained HTML, CSS and Js static pages.',
-            'Created AB tests (delivered through Adobe Target).',
-            'Built features and AB tests in Typescript React using Split.io for controlling the traffic allocation.',
-            'Followed best practices and Agile standards.',
+            'Real-time multiplayer game built in P5js, NodeJs and Socket.io',
+            'Game state is kept on the server side and updated in response to events sent by different clients',
+            'Implements a collision detector both for food-player and player-player collisions',
+            'Runs as a Docker container on an AWS EC2 instance.',
           ]}
           bgColor={colors.orange}
           color={'white'}
-        />
+        >
+          <AgarImage />
+        </JobCard>
       </Wrapper>
     </>
   );
