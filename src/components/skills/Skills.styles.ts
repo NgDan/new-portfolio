@@ -55,5 +55,5 @@ export const Disclaimer = styled.p`
 export const Title = styled.p`
   color: ${colors.darkNavy};
   font-weight: 600;
-  margin: ${rem(16)} 0 0 0;
+  margin: ${rem(12)} 0 0 0;
 `;

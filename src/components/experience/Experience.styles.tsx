@@ -5,7 +5,7 @@ import colors from '../../constants/colors';
 
 export const Title = styled.p`
   padding: 0 ${rem(16)};
-  font-size: ${rem(22)};
+  font-size: ${rem(20)};
   color: white;
   font-weight: 600;
   margin: ${rem(20)} 0 0rem 0;

@@ -3,8 +3,10 @@ export default {
   veryLightGrey: '#EFF2F5',
   navy: '#28539E',
   darkNavy: '#14406C',
+  veryDarkNavy: '#06203a',
   mustard: '#FFD22E',
-  orange: '#FF6E3F',
+  // orange: '#FF6E3F',
+  orange: '#de3700',
   lightBlue: '#2BB8F4',
 };
 

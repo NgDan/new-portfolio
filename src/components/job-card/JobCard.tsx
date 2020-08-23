@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, ReactNode } from 'react';
 import {
   Container,
   Title,
@@ -6,7 +6,19 @@ import {
   Tasks,
   Task,
   TaskDescription,
+  Cta,
+  CtasWrapper,
 } from './JobCard.styles';
+import merge from 'lodash/merge';
+import colors from '../../constants/colors';
+
+interface ctaProps {
+  copy?: string | undefined;
+  link?: string;
+  theme?: 'dark' | 'light';
+}
+
+type themeType = 'light' | 'dark' | undefined;
 
 interface JobCardProps {
   title: string;
@@ -14,6 +26,20 @@ interface JobCardProps {
   tasks: Array<string>;
   bgColor: string;
   color: string;
+  firstCta?: ctaProps;
+  secondCta?: ctaProps;
+}
+
+const defaultCtaProps: ctaProps = {
+  copy: undefined,
+  theme: 'dark',
+};
+
+export interface Icolors {
+  text: string;
+  bg: string;
+  bgHighlight: string;
+  textHighlight: string;
 }
 
 const JobCard: FC<JobCardProps> = ({
@@ -23,7 +49,20 @@ const JobCard: FC<JobCardProps> = ({
   bgColor,
   color,
   children,
+  firstCta,
+  secondCta,
 }) => {
+  const firstCtaProps = merge({}, defaultCtaProps, firstCta);
+  const secondCtaProps = merge({}, defaultCtaProps, secondCta);
+  const getColors = (theme: themeType): Icolors => {
+    console.log('theme: ', theme);
+    const text = theme === 'light' ? colors.darkNavy : 'white';
+    const bg = theme === 'light' ? 'white' : colors.darkNavy;
+    const bgHighlight =
+      theme === 'light' ? colors.darkNavy : colors.veryDarkNavy;
+    const textHighlight = 'white';
+    return { text, bg, bgHighlight, textHighlight };
+  };
   return (
     <Container bgColor={bgColor}>
       {children}
@@ -36,6 +75,28 @@ const JobCard: FC<JobCardProps> = ({
           </Task>
         ))}
       </Tasks>
+      {!!(firstCtaProps?.copy || secondCtaProps?.copy) && (
+        <CtasWrapper>
+          {firstCtaProps?.copy ? (
+            <Cta
+              colors={getColors(firstCtaProps.theme)}
+              href={firstCtaProps.link}
+              target={'_blank'}
+            >
+              {firstCtaProps?.copy}
+            </Cta>
+          ) : null}
+          {secondCtaProps?.copy ? (
+            <Cta
+              colors={getColors(secondCtaProps.theme)}
+              href={secondCtaProps.link}
+              target={'_blank'}
+            >
+              {secondCtaProps?.copy}
+            </Cta>
+          ) : null}
+        </CtasWrapper>
+      )}
     </Container>
   );
 };

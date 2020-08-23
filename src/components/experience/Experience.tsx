@@ -39,13 +39,22 @@ export default function Experience() {
         <JobCard
           title={'Agar clone'}
           tasks={[
-            'Real-time multiplayer game built in P5js, NodeJs and Socket.io',
+            'Real-time multiplayer game built in P5js, NodeJs and Socket.io, inspired by the original Agar.io game',
             'Game state is kept on the server side and updated in response to events sent by different clients',
             'Implements a collision detector both for food-player and player-player collisions',
             'Runs as a Docker container on an AWS EC2 instance.',
           ]}
           bgColor={colors.orange}
           color={'white'}
+          firstCta={{
+            copy: 'Live website',
+            link: 'http://ec2-3-9-132-177.eu-west-2.compute.amazonaws.com',
+          }}
+          secondCta={{
+            copy: 'GitHub',
+            theme: 'light',
+            link: 'https://github.com/NgDan/agario-clone',
+          }}
         >
           <AgarImage />
         </JobCard>

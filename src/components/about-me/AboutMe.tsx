@@ -24,10 +24,9 @@ const AboutMe = () => {
         <Section>
           <Question>What I'm looking for</Question>
           <Answer>
-            Although in the long run I'm interested in learning about multiple
-            programming paradigms, in the short term I'm focused on specific
-            technologies such as React, Typescript, NodeJs and I'd be very eager
-            to learn C# and .NET Core if given the oportunity.
+            Although in the long run I'm interested in multiple programming
+            paradigms, in the short term I'm focused on specific technologies
+            such as React, Typescript, NodeJs, C# and .NET Core.
           </Answer>
         </Section>
         <Section>

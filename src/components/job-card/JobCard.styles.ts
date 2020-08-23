@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import colors from '../../constants/colors';
 import { rem } from 'polished';
 import breakpoints from '../../constants/breakpoints';
+import { Icolors } from './JobCard';
 
 export const Container = styled.div<{ bgColor: string }>`
   width: 100%;
@@ -11,6 +12,7 @@ export const Container = styled.div<{ bgColor: string }>`
   margin-top: ${rem(16)};
   color: ${colors.darkNavy};
   overflow: hidden;
+  box-shadow: 0 ${rem(1)} ${rem(8)} rgba(0, 0, 0, 0.8);
   @media only screen and (min-width: ${breakpoints.tabletPortrait + `px`}) {
     width: calc(50% - ${rem(8)});
   }
@@ -46,4 +48,29 @@ export const TaskDescription = styled.p<{ color: string }>`
   font-size: ${rem(16)};
   margin: 0;
   color: ${({ color }) => color};
+`;
+
+export const CtasWrapper = styled.div`
+  display: flex;
+  width: calc(100% - ${rem(32)});
+  justify-content: space-between;
+  margin: ${rem(16)};
+`;
+
+export const Cta = styled.a<{ colors: Icolors }>`
+  font-size: ${rem(16)};
+  background-color: ${({ colors }) => colors.bg};
+  color: ${({ colors }) => colors.text};
+  width: calc(50% - 0.5rem);
+  padding: ${rem(8)} ${rem(16)};
+  text-align: center;
+  border-radius: ${rem(8)};
+  transition: background-color 200ms ease-in-out;
+  box-shadow: 0 ${rem(1)} ${rem(8)} rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  &:hover {
+    background-color: ${({ colors }) => colors.bgHighlight};
+    color: ${({ colors }) => colors.textHighlight};
+    cursor: pointer;
+  }
 `;

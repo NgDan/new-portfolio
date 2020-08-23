@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { rem } from 'polished';
 import colors from '../../constants/colors';
+import BackgroundPattern from '../skills/icons/BackgroundPattern';
 
 export const Container = styled.div`
   padding: ${rem(16)};
@@ -10,4 +11,5 @@ export const Container = styled.div`
   width: 100%;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.7);
   margin-top: ${rem(16)};
+  background-image: ${BackgroundPattern};
 `;

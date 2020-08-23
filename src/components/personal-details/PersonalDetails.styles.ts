@@ -32,6 +32,9 @@ export const Phone = styled.a`
   font-size: ${rem(16)};
   margin-top: ${rem(8)};
   text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 export const Email = styled.a`
@@ -40,6 +43,9 @@ export const Email = styled.a`
   font-size: ${rem(16)};
   margin-top: ${rem(4)};
   text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 export const GitHub = styled.a`
@@ -48,4 +54,7 @@ export const GitHub = styled.a`
   font-size: ${rem(16)};
   margin-top: ${rem(4)};
   text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
