@@ -15,10 +15,10 @@ const AboutMe = () => {
         <Section>
           <Question>Who I am</Question>
           <Answer>
-            I'm an enthusiastic person who has moved to London last year in
-            search of my first job as a developer. I enjoy programming in
-            general and I'm eager to learn new concepts and share thoughts about
-            them with others.
+            I'm a web developer based in London who is enthusiastic about
+            working in this field. I enjoy learning and discussing about
+            techniques, patterns and clever solutions that lead to high quality
+            code.
           </Answer>
         </Section>
         <Section>
@@ -32,9 +32,9 @@ const AboutMe = () => {
         <Section>
           <Question>What I'm good at</Question>
           <Answer>
-            The curiosity and interest in technical notions smoothen my learning
-            and working processes. I adapt quickly and enjoy challenges and
-            finding interesting solutions.
+            I've got a natural curiosity and interest in technical notions,
+            which makes development entertaining to me. I adapt quickly, enjoy
+            challenges and keen on collaborating with others.
           </Answer>
         </Section>
       </SectionsWrapper>
