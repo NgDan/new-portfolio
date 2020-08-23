@@ -34,7 +34,7 @@ const AboutMe = () => {
           <Answer>
             I've got a natural curiosity and interest in technical notions,
             which makes development entertaining to me. I adapt quickly, enjoy
-            challenges and keen on collaborating with others.
+            challenges and I'm keen on collaborating with others.
           </Answer>
         </Section>
       </SectionsWrapper>
