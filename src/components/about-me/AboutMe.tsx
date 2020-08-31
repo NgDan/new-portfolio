@@ -32,8 +32,8 @@ const AboutMe = () => {
         <Section>
           <Question>What I'm good at</Question>
           <Answer>
-            I've got a natural curiosity and interest in technical notions,
-            which makes development entertaining to me. I adapt quickly, enjoy
+            I have a natural curiosity and interest in technical notions, which
+            makes development entertaining to me. I adapt quickly, enjoy
             challenges and I'm keen on collaborating with others.
           </Answer>
         </Section>
