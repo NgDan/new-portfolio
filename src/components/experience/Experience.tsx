@@ -62,10 +62,9 @@ export default function Experience() {
         <JobCard
           title={'Dijkstra shortest path visualiser'}
           tasks={[
-            'Real-time multiplayer game built in P5js, NodeJs and Socket.io, inspired by the original Agar.io game',
-            'Game state is kept on the server side and updated in response to events sent by different clients',
-            'Implements a collision detector both for food-player and player-player collisions',
-            'Runs as a Docker container on an AWS EC2 instance.',
+            "Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks.",
+            'The algorithm was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.',
+            'This implementation is in no way perfect but was a fun exercise that taught me a few things',
           ]}
           bgColor={colors.mustard}
           color={colors.darkNavy}
