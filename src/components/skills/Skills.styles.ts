@@ -16,7 +16,9 @@ export const Container = styled.div`
   background-image: ${BackgroundPattern};
   padding: ${rem(6)} ${rem(16)} ${rem(8)} ${rem(16)};
   border-radius: ${rem(12)};
-  box-shadow: 0 ${rem(3)} ${rem(15)} rgba(0, 0, 0, 0.7);
+  box-shadow: 0 ${rem(3)} ${rem(
+  15
+)} rgba(0, 0, 0, 0.7)  justify-content: space-around;
 `;
 
 export const SkillName = styled.p`
@@ -31,6 +33,13 @@ export const SkillWrapper = styled.div`
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  width: 25%;
+  @media only screen and (min-width: 374px) {
+    width: 20%;
+  }
+  @media only screen and (min-width: 683px) {
+    width: 10%;
+  }
 `;
 
 export const Skill = styled.div`

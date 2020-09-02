@@ -14,7 +14,7 @@ export default function Experience() {
           title={'Web developer - Experian'}
           date={'June 2020 - Present'}
           tasks={[
-            'Delivered features into various front end apps.',
+            'Delivered features into various front end web apps.',
             'Formed part of a committee created to investigate and choose a new AB testing tool for Experian.',
             'Integrated the REST API of the new AB testing tool on two applications. This process involved collaborating with various teams.',
           ]}
@@ -29,13 +29,13 @@ export default function Experience() {
             'Built and maintained HTML, CSS and Js static pages.',
             'Created AB tests (delivered through Adobe Target).',
             'Built features and AB tests in Typescript React using Split.io for controlling the traffic allocation.',
-            'Followed daily best practices and Agile standards.',
+            'Followed best practices and Agile standards.',
           ]}
           bgColor={colors.lightBlue}
           color={colors.darkNavy}
         />
       </Wrapper>
-      <Title>Personal projects</Title>
+      <Title>Some personal projects</Title>
       <Wrapper>
         <JobCard
           title={'Agar clone'}
@@ -63,7 +63,8 @@ export default function Experience() {
           title={'Dijkstra shortest path visualiser'}
           tasks={[
             "Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks.",
-            'The algorithm was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.',
+            'The user can select a starting point, a few nodes on the map and an ending point',
+            'The radius within which the nodes will connect can also be controlled',
             'This implementation is in no way perfect but was a fun exercise that taught me a few things',
           ]}
           bgColor={colors.mustard}

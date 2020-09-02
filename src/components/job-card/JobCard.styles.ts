@@ -13,6 +13,8 @@ export const Container = styled.div<{ bgColor: string }>`
   color: ${colors.darkNavy};
   overflow: hidden;
   box-shadow: 0 ${rem(1)} ${rem(8)} rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
   @media only screen and (min-width: ${breakpoints.tabletPortrait + `px`}) {
     width: calc(50% - ${rem(8)});
   }
@@ -54,7 +56,7 @@ export const CtasWrapper = styled.div`
   display: flex;
   width: calc(100% - ${rem(32)});
   justify-content: space-between;
-  margin: ${rem(16)};
+  margin: auto ${rem(16)} ${rem(16)} ${rem(16)};
 `;
 
 export const Cta = styled.a<{ colors: Icolors }>`
@@ -68,6 +70,9 @@ export const Cta = styled.a<{ colors: Icolors }>`
   transition: background-color 200ms ease-in-out;
   box-shadow: 0 ${rem(1)} ${rem(8)} rgba(0, 0, 0, 0.8);
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:hover {
     background-color: ${({ colors }) => colors.bgHighlight};
     color: ${({ colors }) => colors.textHighlight};

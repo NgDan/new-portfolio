@@ -15,10 +15,9 @@ const AboutMe = () => {
         <Section>
           <Question>Who I am</Question>
           <Answer>
-            I'm a web developer based in London who is enthusiastic about
-            working in this field. I enjoy learning and discussing about
-            techniques, patterns and clever solutions that lead to high quality
-            code.
+            I'm a web developer based in London who is very enthusiastic about
+            working in this field. I like learning, discussing about software
+            and sharing thoughts with other professionals in this industry.
           </Answer>
         </Section>
         <Section>
