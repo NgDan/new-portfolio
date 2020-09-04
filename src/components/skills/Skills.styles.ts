@@ -33,7 +33,7 @@ export const SkillWrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 25%;
-  @media only screen and (min-width: 374px) {
+  @media only screen and (min-width: 360px) {
     width: 20%;
   }
   @media only screen and (min-width: 683px) {
@@ -61,7 +61,7 @@ export const Disclaimer = styled.p`
 `;
 
 export const Title = styled.p`
-  color: ${colors.darkNavy};
+  color: ${colors.veryDarkNavy};
   font-weight: 600;
   margin: ${rem(12)} 0 0 0;
 `;

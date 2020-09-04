@@ -10,7 +10,7 @@ export const Container = styled.div<{ bgColor: string }>`
   background-color: ${({ bgColor }) => bgColor};
   border-radius: ${rem(12)};
   margin-top: ${rem(16)};
-  color: ${colors.darkNavy};
+  color: ${colors.veryDarkNavy};
   overflow: hidden;
   box-shadow: 0 ${rem(1)} ${rem(8)} rgba(0, 0, 0, 0.8);
   display: flex;
@@ -37,8 +37,7 @@ export const Date = styled.p<{ color: string }>`
 
 export const Tasks = styled.ul`
   padding: 0 1rem;
-  /* margin: 0.5rem 0 0 0; */
-  border-top: ${rem(2)} solid ${colors.darkNavy};
+  border-top: ${rem(2)} solid ${colors.veryDarkNavy};
   margin: ${rem(8)} ${rem(16)} ${rem(16)} ${rem(16)};
 `;
 

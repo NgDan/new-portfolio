@@ -4,7 +4,7 @@ import breakpoints from '../../constants/breakpoints';
 import colors from '../../constants/colors';
 
 export const Container = styled.div`
-  color: ${colors.darkNavy};
+  color: ${colors.veryDarkNavy};
 `;
 export const SectionsWrapper = styled.div`
   display: flex;
@@ -31,7 +31,7 @@ export const Title = styled.p`
   padding: ${rem(16)} ${rem(16)} 0 ${rem(16)};
   margin: 0;
   font-size: ${rem(22)};
-  color: ${colors.darkNavy};
+  color: ${colors.veryDarkNavy};
   font-weight: 600;
 `;
 export const Question = styled.p`

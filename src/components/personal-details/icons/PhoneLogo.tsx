@@ -7,7 +7,7 @@ const PhoneSvg = styled.svg`
   display: inline-block;
   width: ${rem(16)};
   margin-right: ${rem(8)};
-  fill: ${colors.darkNavy};
+  fill: ${colors.veryDarkNavy};
   position: relative;
   top: ${rem(2)};
 `;

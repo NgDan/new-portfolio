@@ -14,12 +14,12 @@ export default function Experience() {
           title={'Web developer - Experian'}
           date={'June 2020 - Present'}
           tasks={[
-            'Delivered features into various front end web apps.',
+            'Delivered features into various front end web apps using React, NodeJs, NextJs, Typescript, Redux, styled components, storybook, Jest (for unit testing), axios.',
             'Formed part of a committee created to investigate and choose a new AB testing tool for Experian.',
             'Integrated the REST API of the new AB testing tool on two applications. This process involved collaborating with various teams.',
           ]}
           bgColor={colors.mustard}
-          color={colors.darkNavy}
+          color={colors.veryDarkNavy}
         />
         <JobCard
           title={'Junior web developer - Experian'}
@@ -32,7 +32,7 @@ export default function Experience() {
             'Followed best practices and Agile standards.',
           ]}
           bgColor={colors.lightBlue}
-          color={colors.darkNavy}
+          color={colors.veryDarkNavy}
         />
       </Wrapper>
       <Title>Some personal projects</Title>
@@ -68,7 +68,7 @@ export default function Experience() {
             'This implementation is in no way perfect but was a fun exercise that taught me a few things',
           ]}
           bgColor={colors.mustard}
-          color={colors.darkNavy}
+          color={colors.veryDarkNavy}
           firstCta={{
             copy: 'Live website',
             link: 'http://dijkstra-algo.s3-website.eu-west-2.amazonaws.com/',
