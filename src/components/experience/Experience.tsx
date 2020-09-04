@@ -71,12 +71,12 @@ export default function Experience() {
           color={colors.darkNavy}
           firstCta={{
             copy: 'Live website',
-            link: 'http://ec2-3-9-132-177.eu-west-2.compute.amazonaws.com',
+            link: 'http://dijkstra-algo.s3-website.eu-west-2.amazonaws.com/',
           }}
           secondCta={{
             copy: 'GitHub',
             theme: 'light',
-            link: 'https://github.com/NgDan/agario-clone',
+            link: 'https://github.com/NgDan/dijkstra-p5',
           }}
         >
           <DijkstraImage />
