@@ -8,7 +8,7 @@ import colors from '../../constants/colors';
 export default function Experience() {
   return (
     <>
-      <Title>Experience</Title>
+      <Title id='experience'>Experience</Title>
       <Wrapper>
         <JobCard
           title={'Web developer - Experian'}

@@ -55,7 +55,6 @@ const JobCard: FC<JobCardProps> = ({
   const firstCtaProps = merge({}, defaultCtaProps, firstCta);
   const secondCtaProps = merge({}, defaultCtaProps, secondCta);
   const getColors = (theme: themeType): Icolors => {
-    console.log('theme: ', theme);
     const text = theme === 'light' ? colors.veryDarkNavy : 'white';
     const bg = theme === 'light' ? 'white' : colors.darkNavy;
     const bgHighlight =
