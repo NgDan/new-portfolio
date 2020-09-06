@@ -1,6 +1,6 @@
-import React, { useRef, MutableRefObject, useEffect, useState } from 'react';
+import React from 'react';
 import { Container, NavItem } from './MobileNavigation.styles';
-import throttle from 'lodash/throttle';
+
 import useIsElemInViewport from '../../hooks/useIsElemInViewport';
 
 const MobileNavigation = () => {
