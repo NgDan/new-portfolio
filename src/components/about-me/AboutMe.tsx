@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Container,
   Section,
-  Title,
   Question,
   Answer,
   SectionsWrapper,
@@ -10,7 +9,7 @@ import {
 
 const AboutMe = () => {
   return (
-    <Container>
+    <Container id='about-me'>
       <SectionsWrapper>
         <Section>
           <Question>Who I am</Question>

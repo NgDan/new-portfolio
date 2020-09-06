@@ -4,7 +4,6 @@ import {
   Skill,
   SkillName,
   SkillWrapper,
-  Disclaimer,
   Title,
 } from './Skills.styles';
 import ReactLogo from './icons/ReactLogo';

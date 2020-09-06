@@ -8,10 +8,11 @@ export const Container = styled.nav`
   background-color: white;
   display: flex;
   justify-content: space-around;
+  box-shadow: 0 ${rem(1)} ${rem(8)} rgba(0, 0, 0, 0.8);
 `;
 
-export const NavItem = styled.div`
+export const NavItem = styled.div<{ isVisible?: boolean }>`
   width: ${rem(20)};
   height: ${rem(20)};
-  background-color: black;
+  background-color: ${({ isVisible }) => (isVisible ? 'red' : 'black')};
 `;

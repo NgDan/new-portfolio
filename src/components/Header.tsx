@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import breakpoints from '../constants/breakpoints';
-import colors from '../constants/colors';
 import { rem } from 'polished';
 
 export const Header = styled.div`
