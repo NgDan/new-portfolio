@@ -18,11 +18,12 @@ export default function useIsElemInViewport(
     const handleScroll = throttle(() => {
       if (
         elem?.getBoundingClientRect?.()?.y != null &&
-        window.pageYOffset != null
+        window.pageYOffset != null &&
+        elem?.getBoundingClientRect?.().height != null
       ) {
         setIsInViewport(
-          window.pageYOffset + window.innerHeight + tolerance >
-            elem?.getBoundingClientRect?.()?.y + window.pageYOffset
+          window.pageYOffset + tolerance >
+            elem?.getBoundingClientRect?.()?.y + window.pageYOffset - tolerance
         );
       }
     }, 50);
