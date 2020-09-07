@@ -25,10 +25,10 @@ export default function useIsElemInViewport(
         window.pageYOffset != null &&
         elem?.getBoundingClientRect?.().height != null
       ) {
-        setDistFromTop(elem?.getBoundingClientRect?.()?.y + window.pageYOffset);
-        setIsInViewport(
-          window.pageYOffset + tolerance > distFromTop - tolerance
+        setDistFromTop(
+          elem?.getBoundingClientRect?.()?.y + window.pageYOffset - tolerance
         );
+        setIsInViewport(window.pageYOffset + tolerance > distFromTop);
       }
     }, 50);
     window.addEventListener('scroll', handleScroll);

@@ -9,7 +9,7 @@ const DetailsSvg = styled.svg`
   height: ${rem(30)};
 `;
 function DetailsLogo({ isVisible, distFromTop }: IIconsProps): ReactElement {
-  const fill = isVisible ? colors.orange : colors.veryDarkNavy;
+  const fill = isVisible ? colors.lightBlue : colors.veryDarkNavy;
   return (
     <DetailsSvg
       viewBox='-42 0 512 512.002'
