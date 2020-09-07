@@ -4,16 +4,20 @@ import throttle from 'lodash/throttle';
 export default function useIsElemInViewport(
   id: string,
   tolerance: number = 0
-): boolean {
+): { isInViewport: boolean; distFromTop: number } {
   const [elem, setElem] = useState<Element | null>(null);
   useEffect(() => {
-    // console.log(window.pageYOffset);
+    // using querySelector instead of a ref to avoid drilling props
+    // or building a global state management solution like redux
+    // or context + useReducer since it's not really worth it
+    // for a project this small
     const element = document.querySelector(`#${id}`);
     if (element != null) {
       setElem(element);
     }
   }, [id]);
   const [isInViewport, setIsInViewport] = useState<boolean>(false);
+  const [distFromTop, setDistFromTop] = useState<number>(0);
   useEffect(() => {
     const handleScroll = throttle(() => {
       if (
@@ -21,14 +25,19 @@ export default function useIsElemInViewport(
         window.pageYOffset != null &&
         elem?.getBoundingClientRect?.().height != null
       ) {
+        setDistFromTop(elem?.getBoundingClientRect?.()?.y + window.pageYOffset);
         setIsInViewport(
-          window.pageYOffset + tolerance >
-            elem?.getBoundingClientRect?.()?.y + window.pageYOffset - tolerance
+          window.pageYOffset + tolerance > distFromTop - tolerance
         );
       }
     }, 50);
     window.addEventListener('scroll', handleScroll);
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [elem, tolerance]);
-  return isInViewport;
+  }, [distFromTop, elem, tolerance]);
+  console.log({ distFromTop });
+  return {
+    isInViewport,
+    distFromTop: distFromTop,
+  };
 }
