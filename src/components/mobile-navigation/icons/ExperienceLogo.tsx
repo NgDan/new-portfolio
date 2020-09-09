@@ -9,7 +9,7 @@ const ExperienceSvg = styled.svg`
   height: ${rem(30)};
 `;
 function ExperienceLogo({ isVisible, distFromTop }: IIconsProps): ReactElement {
-  const fill = isVisible ? colors.lightBlue : colors.veryDarkNavy;
+  const fill = isVisible ? colors.veryDarkNavy : colors.veryLightgrey;
   return (
     <ExperienceSvg
       width='512'

@@ -9,7 +9,7 @@ const ProjectsSvg = styled.svg`
   height: ${rem(30)};
 `;
 function ProjectsLogo({ isVisible, distFromTop }: IIconsProps): ReactElement {
-  const fill = isVisible ? colors.lightBlue : colors.veryDarkNavy;
+  const fill = isVisible ? colors.veryDarkNavy : colors.veryLightgrey;
   return (
     <ProjectsSvg
       width='512'

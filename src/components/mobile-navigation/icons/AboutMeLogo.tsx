@@ -9,7 +9,7 @@ const AboutMeSvg = styled.svg`
   height: ${rem(30)};
 `;
 function AboutMeLogo({ isVisible, distFromTop }: IIconsProps): ReactElement {
-  const fill = isVisible ? colors.lightBlue : colors.veryDarkNavy;
+  const fill = isVisible ? colors.veryDarkNavy : colors.veryLightgrey;
   return (
     <AboutMeSvg
       x='0'
