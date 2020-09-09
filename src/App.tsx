@@ -11,7 +11,6 @@ import breakpoints from './constants/breakpoints';
 
 export default function App() {
   const { width } = useWindowSize();
-  console.log({ width });
 
   let showMobileNav;
   if (typeof width === 'number') {

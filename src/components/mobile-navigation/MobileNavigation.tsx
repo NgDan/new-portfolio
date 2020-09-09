@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, NavItem } from './MobileNavigation.styles';
+import { Container } from './MobileNavigation.styles';
 import useIsElemInViewport from '../../hooks/useIsElemInViewport';
 import DetailsLogo from './icons/DetailsLogo';
 import AboutMeLogo from './icons/AboutMeLogo';

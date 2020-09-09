@@ -35,7 +35,6 @@ export default function useIsElemInViewport(
     handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, [distFromTop, elem, tolerance]);
-  console.log({ distFromTop });
   return {
     isInViewport,
     distFromTop: distFromTop,
