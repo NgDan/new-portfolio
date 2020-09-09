@@ -15,7 +15,7 @@ export default function Experience() {
             title={'Web developer - Experian'}
             date={'June 2020 - Present'}
             tasks={[
-              'Delivered features into various front end web apps using React, NodeJs, NextJs, Typescript, Redux, styled components, storybook, Jest (for unit testing), axios.',
+              'Delivered features into various web apps using popular technologies such as React, NodeJs, NextJs, Typescript, Redux, Styled components, Storybook, Jest, Axios, Redux etc.',
               'Formed part of a committee created to investigate and choose a new AB testing tool for Experian.',
               'Integrated the REST API of the new AB testing tool on two applications. This process involved collaborating with various teams.',
             ]}
@@ -29,7 +29,7 @@ export default function Experience() {
               'Learned and improved my technical abilities in different technologies and standards',
               'Built and maintained HTML, CSS and Js static pages.',
               'Created AB tests (delivered through Adobe Target).',
-              'Built features and AB tests in Typescript React using Split.io for controlling the traffic allocation.',
+              'Built features and AB tests in Typescript React using Split.io for feature toggling and traffic allocation.',
               'Followed best practices and Agile standards.',
             ]}
             bgColor={colors.lightBlue}

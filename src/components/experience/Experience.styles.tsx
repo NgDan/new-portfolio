@@ -3,7 +3,7 @@ import { rem } from 'polished';
 import breakpoints from '../../constants/breakpoints';
 
 export const Title = styled.p`
-  padding: 0 ${rem(16)};
+  padding: ${rem(8)} ${rem(16)} ${rem(0)} ${rem(16)};
   font-size: ${rem(20)};
   color: white;
   font-weight: 600;

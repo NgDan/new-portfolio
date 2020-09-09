@@ -4,7 +4,7 @@ import colors from '../../constants/colors';
 import BackgroundPattern from '../skills/icons/BackgroundPattern';
 
 export const Container = styled.div`
-  padding: ${rem(16)};
+  padding: ${rem(8)} ${rem(16)} ${rem(16)} ${rem(16)};
   background-color: ${colors.darkNavy};
   border-radius: ${rem(48)} ${rem(48)} 0 0;
   width: 100%;
