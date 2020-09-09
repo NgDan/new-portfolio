@@ -5,6 +5,7 @@ import DetailsLogo from './icons/DetailsLogo';
 import AboutMeLogo from './icons/AboutMeLogo';
 import ExperienceLogo from './icons/ExperienceLogo';
 import ProjectsLogo from './icons/ProjectsLogo';
+import replaceAllItemsWithFalseExceptLastOne from '../../helpers/replaceAllItemsWithFalseExceptLastOne';
 
 const MobileNavigation = () => {
   const {
@@ -23,35 +24,28 @@ const MobileNavigation = () => {
     isInViewport: isProjects,
     distFromTop: dpojectsDistFromTop,
   } = useIsElemInViewport('projects', 40);
-  const sectionsVisibility = [isDetails, isAboutMe, isExperience, isProjects];
 
-  // keeps only the last true elem in array as true
-  let foundLastVisibleElem = false;
-  for (let i = sectionsVisibility.length - 1; i >= 0; i--) {
-    if (foundLastVisibleElem) {
-      sectionsVisibility[i] = false;
-    }
-    if (sectionsVisibility[i]) {
-      foundLastVisibleElem = true;
-    }
-  }
+  const sectionsVisibility = [isDetails, isAboutMe, isExperience, isProjects];
+  const filteredSectionsVisibility = replaceAllItemsWithFalseExceptLastOne(
+    sectionsVisibility
+  );
 
   return (
     <Container>
       <DetailsLogo
-        isVisible={sectionsVisibility[0]}
+        isVisible={filteredSectionsVisibility[0]}
         distFromTop={detailsDistFromTop}
       />
       <AboutMeLogo
-        isVisible={sectionsVisibility[1]}
+        isVisible={filteredSectionsVisibility[1]}
         distFromTop={aboutMeDistFromTop}
       />
       <ExperienceLogo
-        isVisible={sectionsVisibility[2]}
+        isVisible={filteredSectionsVisibility[2]}
         distFromTop={experienceDistFromTop}
       />
       <ProjectsLogo
-        isVisible={sectionsVisibility[3]}
+        isVisible={filteredSectionsVisibility[3]}
         distFromTop={dpojectsDistFromTop}
       />
     </Container>
