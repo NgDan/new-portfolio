@@ -15,7 +15,7 @@ export default function Experience() {
             title={'Web developer - Experian'}
             date={'June 2020 - Present'}
             tasks={[
-              'Delivered features into various web apps using popular technologies such as React, NodeJs, NextJs, Typescript, Redux, Styled components, Storybook, Jest, Axios, Redux etc.',
+              'Delivered features into various web apps using popular technologies such as React, NodeJs, NextJs, Typescript, Redux, Styled Components, Storybook, Jest, Axios etc.',
               'Formed part of a committee created to investigate and choose a new AB testing tool for Experian.',
               'Integrated the REST API of the new AB testing tool on two applications. This process involved collaborating with various teams.',
             ]}
